@@ -1,0 +1,21 @@
+Start
+Define class BusStop
+    Attributes: name, next
+
+Define class BusRoute
+    Attribute: head
+    Method insertAfter(stopName, newStopName)
+        Search stopName
+        Insert newStopName after it
+    Method delete(stopName)
+        Search and remove stopName
+    Method search(stopName)
+        Traverse and return true if found
+
+Main
+    Create BusRoute
+    Add stops: Depot -> Main Street -> City Mall -> Hospital -> Airport
+    Insert "University" after "City Mall"
+    Delete "Hospital"
+    Search for "Airport"
+End

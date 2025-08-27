@@ -1,0 +1,27 @@
+Start
+Define class User
+    Attributes: username, password
+    Method login()
+
+Define class Student extends User
+    Attributes: enrolled
+    Method login()
+        If username and password valid AND enrolled is true
+            Grant access
+        Else
+            Deny access
+
+Define class Admin extends User
+    Attributes: isAdmin
+    Method login()
+        If username and password valid AND isAdmin is true
+            Grant access
+        Else
+            Deny access
+
+Main
+    Create Student("john", "pass", true)
+    Call login()
+    Create Admin("admin1", "adminpass", true)
+    Call login()
+End

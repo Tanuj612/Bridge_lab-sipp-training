@@ -1,0 +1,17 @@
+Start
+Define class AttendanceSystem
+    Attribute: records[students][days]
+    Method markAttendance(studentId, day, status)
+        Set records[studentId][day] = status
+    Method updateAttendance(studentId, day, status)
+        Set records[studentId][day] = status
+    Method generateReport(studentId)
+        Count 'P' in records[studentId]
+        Return total
+
+Main
+    Create AttendanceSystem with 10 students, 30 days
+    Mark attendance for student 1: P, P, A, P, P, P, A
+    Update student 1, day 3 to P
+    Generate report for student 1
+End

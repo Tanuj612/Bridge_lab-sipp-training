@@ -1,0 +1,20 @@
+Start
+Define class TaskManager
+    Attribute: taskMap as LinkedHashMap
+    Attribute: nextId = 1
+    Method addTask(description)
+        taskMap[nextId] = description
+        Increment nextId
+    Method removeTask(taskId)
+        Remove taskId from taskMap
+    Method viewTasks()
+        Return taskMap entries
+
+Main
+    Create TaskManager
+    AddTask("Check emails")
+    AddTask("Prepare sales report")
+    AddTask("Call client")
+    RemoveTask(2)
+    ViewTasks()
+End

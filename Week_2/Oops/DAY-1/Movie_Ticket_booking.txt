@@ -1,0 +1,28 @@
+Start
+Define class Ticket
+    Attributes: movieName, seatNumber, price, status
+
+Define class Theatre
+    Attributes: schedule, seats
+    Method bookTicket(movie, seat)
+        If seat available
+            Create Ticket
+            Mark seat as booked
+    Method cancelTicket(ticket)
+        Mark seat as available
+        Set ticket status to canceled
+
+Define class Customer
+    Attributes: name
+    Method selectMovie(movie)
+    Method book(movie, seat)
+    Method cancel(ticket)
+
+Main
+    Create Theatre with schedule and seats
+    Create Customer("Ravi")
+    Customer selects "Avengers" at 6 PM
+    Customer books seat A12
+    Ticket issued
+    Customer cancels ticket
+End

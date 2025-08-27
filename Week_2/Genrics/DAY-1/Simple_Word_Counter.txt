@@ -1,0 +1,18 @@
+Start
+Define class WordCounter
+    Method countWords(text)
+        Remove punctuation
+        Convert text to lowercase
+        Split text into words
+        For each word
+            If word in map
+                Increment count
+            Else
+                Set count to 1
+        Sort map by value descending
+        Return result
+
+Main
+    Create WordCounter
+    Call countWords("The news today is about the rise in technology trends.")
+End
